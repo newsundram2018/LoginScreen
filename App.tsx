@@ -26,7 +26,6 @@ const App = () => {
           setShoppingList={setShoppingList}
           shoppingList={shoppingList}
         />
-
         <FlatList
           data={shoppingList}
           keyExtractor={(item, index) => `${item.item}-${index}`}
@@ -34,7 +33,6 @@ const App = () => {
             <Item item = {item.item} quantity={item.quantity}/>
           )}
         />
-
       </View>
       </ScrollView>
     </SafeAreaView>
